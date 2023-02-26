@@ -19,4 +19,4 @@ Screenshot:
   
 for request for changes, dm me: iiTz Arcur#0001 or use the [Gametools Discord](https://discord.gametools.network/). if you want to support me: paypal.me/iiTzArcur
 
-bot was originally made for Joep#0001
+bot was originally made for Joep#0001 back in 2020
