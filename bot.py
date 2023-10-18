@@ -45,14 +45,14 @@ async def on_ready():
         api.set_auth("top.gg", top_token)
         api.start_loop()
 
-    try:
-        while True:
+    while True:
+        try:
             await bot.change_presence(
                 activity=discord.Game(f"Is in {bot.guilds} servers")
             )
             await asyncio.sleep(900)
-    except Exception as e:
-        print(e)
+        except Exception as e:
+            print(e)
 
 
 # dont give a error if a command doesn't exist
