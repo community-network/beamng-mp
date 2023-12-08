@@ -1,9 +1,0 @@
-discord.py~=2.1
-discord-py-slash-command~=4.2
-redis~=4.4.2
-requests~=2.28
-dnspython~=2.3
-pycountry~=22.3
-discordhealthcheck~=0.1
-dblpy~=0.4
-discordlists.py==1.1.1
