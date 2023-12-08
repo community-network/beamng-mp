@@ -1,10 +1,16 @@
-FROM python:3
+FROM python:3.12
 
 WORKDIR /usr/src/app
 
-COPY ./requirements.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install poetry
+COPY ./pyproject.toml /pyproject.toml
+COPY ./poetry.lock /poetry.lock
+RUN poetry config virtualenvs.create false
+
+RUN poetry install --only main
 
 COPY . .
+
+HEALTHCHECK CMD discordhealthcheck || exit 1
 
 CMD [ "python", "./bot.py" ]
