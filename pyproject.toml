@@ -6,16 +6,17 @@ authors = ["Zefanja Jobse <zefanjaj@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-discord-py = "^2.3.2"
+python = "^3.13"
+discord-py = "^2.4.0"
 discord-py-slash-command = "^4.2.1"
-redis = "^5.0.1"
-requests = "^2.31.0"
-dnspython = "^2.4.2"
-pycountry = "^23.12.7"
+redis = "^5.2.0"
+requests = "^2.32.3"
+dnspython = "^2.7.0"
+pycountry = "^24.6.1"
 discordhealthcheck = "^0.1.1"
 dblpy = "^0.4.0"
 discordlists-py = "^1.1.1"
+audioop-lts = "^0.2.1"
 
 [build-system]
 requires = ["poetry-core"]

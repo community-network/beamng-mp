@@ -1,4 +1,5 @@
 """Beamng-mp cog"""
+
 import re
 from typing import List
 import discord

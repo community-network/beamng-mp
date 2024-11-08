@@ -4,7 +4,8 @@ import aiohttp
 import pycountry
 import discord
 
-from ..api.redis import get_from_cache, set_to_cache, CACHE_MAX_AGE_SERVERS
+from ..api.redis import RedisClient
+from ..api import config
 
 
 async def sizeof_fmt(num, suffix="B"):
@@ -18,7 +19,8 @@ async def sizeof_fmt(num, suffix="B"):
 
 async def read_api():
     """Read the beamng API"""
-    data = await get_from_cache("beamMp:servers")
+    redis_client = RedisClient()
+    data = await redis_client.get_from_cache("beamMp:servers")
     if data is not None:
         # To not spam their api
         result = json.loads(data)
@@ -28,10 +30,10 @@ async def read_api():
             async with session.get(url) as r:
                 result = await r.json()
                 data = json.dumps(result)
-                await set_to_cache(
+                await redis_client.set_to_cache(
                     "beamMp:servers",
                     data,
-                    CACHE_MAX_AGE_SERVERS,
+                    config.CACHE_MAX_AGE_SERVERS,
                 )
     return result
 

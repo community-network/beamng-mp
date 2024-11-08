@@ -1,4 +1,5 @@
 """Discord.py healthcheck"""
+
 import asyncio
 import discord
 

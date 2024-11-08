@@ -1,4 +1,5 @@
 """Discord command syncing"""
+
 from typing import Literal, Optional
 from pprint import pprint
 import discord

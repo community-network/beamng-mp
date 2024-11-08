@@ -1,10 +1,11 @@
 """discord api connection"""
+
 import os
 import asyncio
 import discord
 from discord.ext import commands
 import discordlists
-from cogs.api.redis import redis_connect
+from cogs.api.redis import RedisClient
 import healthcheck
 
 TOKEN = os.getenv("TOKEN", "")
@@ -32,7 +33,8 @@ async def on_ready():
     print("bot started \n")
     print(f"Connected on {len(bot.guilds)} server(s)")
 
-    await redis_connect()
+    redis_client = RedisClient()
+    await redis_client.redis_connect()
 
     # sync /sync
     await bot.tree.sync(guild=discord.Object(770746735533228083))
@@ -48,7 +50,7 @@ async def on_ready():
     while True:
         try:
             await bot.change_presence(
-                activity=discord.Game(f"Is in {bot.guilds} servers")
+                activity=discord.Game(f"in {len(bot.guilds)} servers")
             )
             await asyncio.sleep(900)
         except Exception as e:
