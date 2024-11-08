@@ -28,6 +28,7 @@ class AdminOnly(commands.Cog):
         **/mpinfo ** Get info about all the running servers.
         **/mpip (server IP)** Get the servers based on serverip.
         **/mpname (server name)** Get info based on a specific server (uses first matching result).
+        [See the source code on GitHub for this bot](https://github.com/community-network/beamng-mp)
         """,
             inline=False,
         )
