@@ -15,8 +15,8 @@ Commands;
   
   
 Screenshot:
-  https://gyazo.com/d7eafe47724d51a70db24deb21331cab
+[image](https://gyazo.com/d7eafe47724d51a70db24deb21331cab)
   
-for request for changes, dm me: iiTz Arcur#0001 or use the [Gametools Discord](https://discord.gametools.network/). if you want to support me: paypal.me/iiTzArcur
+for request for changes, dm me: iiTz Arcur#0001 or use the [Gametools Discord](https://discord.gametools.network/). if you want to support me: [paypal.me/iiTzArcur](https://paypal.me/iiTzArcur)
 
 bot was originally made for Joep#0001 back in 2020
