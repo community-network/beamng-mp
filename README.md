@@ -15,7 +15,7 @@ Commands;
   
   
 Screenshot:
-[image](https://gyazo.com/d7eafe47724d51a70db24deb21331cab)
+   https://gyazo.com/d7eafe47724d51a70db24deb21331cab
   
 for request for changes, dm me: iiTz Arcur#0001 or use the [Gametools Discord](https://discord.gametools.network/). if you want to support me: [paypal.me/iiTzArcur](https://paypal.me/iiTzArcur)
 
